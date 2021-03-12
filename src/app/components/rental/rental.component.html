@@ -1,0 +1,23 @@
+
+  <h1 class="text-center">Kiralama Bilgileri</h1>
+  <table class="table">
+     
+      <thead>
+          <tr>
+              <th>Marka</th>
+              <th>Açıklama</th>
+              <th>Müşteri</th>
+              <th>Kiralama Tarihi</th>
+              <th>İade Tarihi</th>
+              
+          </tr>
+      </thead>
+      <tr *ngFor="let rental of rentals">
+          <td>{{rental.brandName}}</td>
+          <td>{{rental.description}}</td>
+          <td>{{rental.customerFullName}}</td>
+          <td>{{rental.rentDate}}</td>
+          <td>{{rental.returnDate}}</td>
+      
+      </tr>
+  </table>

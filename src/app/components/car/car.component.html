@@ -1,0 +1,26 @@
+
+  <h1 class="text-center">Arabalarımız</h1>
+<table class="table">
+   
+    <thead>
+        <tr>
+            <th>Marka</th>
+            <th>Açıklama</th>
+            <th>Renk</th>
+            <th>Model (Yıl)</th>
+            <th>Günlük Ücret</th>
+            
+        </tr>
+    </thead>
+    <tr *ngFor="let car of cars">
+        <td>{{car.brandName}}</td>
+        <td>{{car.description}}</td>
+        <td>{{car.colorName}}</td>
+        <td>{{car.modelYear}}</td>
+        <td>{{car.dailyPrice}}</td>
+
+        
+        
+    </tr>
+</table>
+
